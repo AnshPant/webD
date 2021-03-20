@@ -1,0 +1,42 @@
+.nav1{
+   
+    display: flex;
+    margin-top: 0px;
+  
+}
+.nav1 a{
+    padding: 10px;
+    font-family: 'Pangolin', cursive;
+    font-size: 2rem;
+}
+.container{
+    background-color:grey ;
+    height: 40rem ; 
+    
+}
+.footer{
+    background-color: lightgreen;
+    margin-top: 0px;
+}
+.a{
+    display: flex;
+    padding: 10px;
+   justify-content: center;
+   font-family: 'Lobster', cursive;
+   font-size: 2.3rem;
+   color: skyblue;
+  
+}
+.b{
+    display: flex;
+    justify-content: center;
+    margin-top: none;
+    margin-left: 30rem;
+    font-family: 'Pangolin', cursive;
+    flex-direction: column;
+}
+
+.sub{
+    display: flex;
+   
+}
