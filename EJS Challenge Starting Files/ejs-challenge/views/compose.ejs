@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+
+<form action="/COMPOSE" method="post">
+    <div class="form-group pmd-textfield pmd-textfield-outline pmd-textfield-floating-label">
+        <label for="outline-floating-label-help1"><h1 class="text-muted">TITLE</h1></label>
+        <input type="text" id="outline-floating-label-help1" class="form-control" name='jj'>
+        <small id="inputhelptext" class="form-text text-muted">For eg: Tragic Christmas .</small>
+    </div>
+    
+
+
+<div class="form-group pmd-textfield pmd-textfield-outline pmd-textfield-floating-label">
+	<label><h1 class="text-muted">POST</h1></label>
+	<textarea required class="form-control" name="kk"></textarea>
+    <small id="inputhelptext" class="form-text text-muted">For eg: Santa Claus forgot my gift this christmas and then i spent my whole day lamenting while playing valorant 😂😂.</small>
+</div>
+<button type="submit" class="btn btn-outline-info">PUBLISH</button>
+
+<%- include('partials/footer'); -%>
+
+
+
