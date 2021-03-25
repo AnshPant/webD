@@ -1,0 +1,74 @@
+
+
+*::after  insert someproperty after the selected text ,  *::before insert some property before the text content of selected item
+
+*  , *::after , *::before {
+    box-sizing: border-box; 
+    font-family: Gotham Rounded , sans-serif ;
+    font-weight: "normal" ;
+}
+
+body{
+    padding : 0 ;
+    margin : 0 ;
+    background: linear-gradient(to right , #cc2b5e ,#753a88   );
+}
+
+.calculator-grid {
+display: grid;
+justify-content: center;
+min-height: 100vh ;
+text-align: center;
+align-content: center;
+grid-template-columns: repeat(4 , 100px); /*this one is good it will help in grid box*/
+grid-template-rows: minmax(120px,auto) repeat(5, 100px);
+
+}
+
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem ;
+    border: 1px solid whtie ;
+}
+.calculator-grid > button  :hover{
+    background-color: red;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1/-1 ; /*first col to last col*/
+    background-color: rgba(0 , 0,0, 0.75);
+    display: flex; /*allow us to use flex properties*/
+    align-items: flex-end; /*if permit flex them at end*/
+    justify-content: space-between; /*provide maximum distance between two thing*/
+    flex-direction: column; /*without this they will get located horizontally*/
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
+  
+  .btn btn-outline-warning:hover{
+    background-color: rgb(135, 235, 205); 
+  }
+  input{
+    border-radius: 21px;
+    border: 5px solid #244624;
+    font-size:34px;
+    height: 65px;
+    width: 368px;
+    margin-top: 18px;
+}
