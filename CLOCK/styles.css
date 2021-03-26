@@ -1,0 +1,88 @@
+* , * ::after , *::before {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body {
+    background : linear-gradient(to right ,  green, orange)
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255,255,255,.8);
+    border-radius: 50%;
+    border: 4px solid black ;
+    position: relative;
+}
+.clock .number {
+    -- rotation: 0 ; //declaration of css variable 
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 100% ;
+    text-align: center;
+    transform : rotate(var(--rotation));
+
+    
+}
+.clock .number1{--rotation :30deg ;}
+.clock .number2{--rotation :60deg ;}
+.clock .number3{--rotation :90deg ;}
+.clock .number4{--rotation :120deg ;}
+.clock .number5{--rotation :150deg ;}
+.clock .number6{--rotation :180deg ;}
+.clock .number7{--rotation :210deg ;}
+.clock .number8{--rotation :240deg ;}
+.clock .number9{--rotation :270deg ;}
+.clock .number10{--rotation :300deg ;}
+.clock .number11{--rotation :330deg ;}
+
+.clock .hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    z-index: 10;
+    background-color: black;
+    transform-origin: bottom; /* else clock hand will rotote on its own centre and not on clock centre where their bottom is attached */
+    transform: translate(-50%) rotate(var(--rotation)*1deg);
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px  ;
+
+}
+
+.clock .hand.second{
+    height: 45%;
+    width: 0.86px;
+    background-color: red;
+
+}
+.clock .hand.minute{
+    height : 7px ;
+    width : 40% ;
+    background-color: black ;
+}
+.clock .hand.hour{
+    height: 10px ;
+    width: 30% ;
+    background-color: black;
+    
+    transform-origin: bottom;
+    
+}
+
+.circle {
+
+    height: 15px ;
+    width: 15px ;
+    z-index: 11;
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    
+    background-color: black;
+    transform: translate(-40% ,-80%);
+    border-radius: 50%;
+    
+}
